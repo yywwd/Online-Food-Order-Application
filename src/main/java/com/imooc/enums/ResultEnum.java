@@ -1,0 +1,58 @@
+package com.imooc.enums;
+
+import lombok.Getter;
+
+/**
+ * Created by Wandong Wu
+ */
+@Getter
+public enum ResultEnum {
+
+    SUCCESS(0, "SUCCESSFLU"),
+
+    PARAM_ERROR(1, "PARAMETER_ERROR"),
+
+    PRODUCT_NOT_EXIST(10, "PRODUCT_NOT_EXIST"),
+
+    PRODUCT_STOCK_ERROR(11, "PRODUCT_STOCK_ERROR"),
+
+    ORDER_NOT_EXIST(12, "ORDER_NOT_EXIST"),
+
+    ORDERDETAIL_NOT_EXIST(13, "ORDER_DETAIL_NOT_EXIST"),
+
+    ORDER_STATUS_ERROR(14, "ORDER_STATUS_ERROR"),
+
+    ORDER_UPDATE_FAIL(15, "ORDER_UPDATE_FAIL"),
+
+    ORDER_DETAIL_EMPTY(16, "ORDER_DETAIL_EMPTY"),
+
+    ORDER_PAY_STATUS_ERROR(17, "ORDER_PAYMENT_STATUS_ERROR"),
+
+    CART_EMPTY(18, "CART_EMPTY"),
+
+    ORDER_OWNER_ERROR(19, "ORDER_OWNER_ERROR"),
+
+    WECHAT_MP_ERROR(20, "WECHAT_MP_ERROR"),
+
+    WXPAY_NOTIFY_MONEY_VERIFY_ERROR(21, "WXPAY_NOTIFY_MONEY_VERIFY_ERROR"),
+
+    ORDER_CANCEL_SUCCESS(22, "ORDER_CANCEL_SUCCESS"),
+
+    ORDER_FINISH_SUCCESS(23, "ORDER_FINISH_SUCCESS"),
+
+    PRODUCT_STATUS_ERROR(24, "PRODUCT_STATUS_ERROR"),
+
+    LOGIN_FAIL(25, "LOGIN_FAIL"),
+
+    LOGOUT_SUCCESS(26, "LOGOUT_SUCCESS"),
+    ;
+
+    private Integer code;
+
+    private String message;
+
+    ResultEnum(Integer code, String message) {
+        this.code = code;
+        this.message = message;
+    }
+}
